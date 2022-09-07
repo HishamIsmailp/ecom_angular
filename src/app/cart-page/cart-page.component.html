@@ -1,0 +1,28 @@
+<div nz-row class="">
+  <div nz-col nzSpan="24" class="cartData" *ngFor="let dat of cartData" nz-row>
+    <div nz-col nzXs="24" nzSm="24" nzLg="7">
+      <img [src]="dat.image" alt="" width="200px" height="200px" />
+    </div>
+    <div nz-col nzXs="24" nzSm="24" nzLg="8">
+      <h3>{{ dat.title }}</h3>
+      <h2>₹{{ dat.price }}</h2>
+      <td>
+        <button nz-button nzDanger (click)="deleteCartData(dat.id)">
+          delete
+        </button>
+      </td>
+    </div>
+  </div>
+</div>
+<div nz-col nzSpan="12" class="priceDetails" *ngIf="!(cartData.length == 0)">
+ <h3>Total Price=₹{{ totalPrice }}</h3>
+</div>
+<div *ngIf="cartData.length == 0" class="cart-error-image">
+  <div>
+    <img
+      src="https://www.totalwoodflooring.com/skin/frontend/default/totalwood/images/cart-empty.png"
+      alt=""
+      (click)="continueShopping()"
+    />
+  </div>
+</div>

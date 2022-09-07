@@ -1,0 +1,31 @@
+.cartData{
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    box-shadow:  2px 2px #888888;
+}
+.priceContainer{
+    display: block;
+    float: right;
+    background-color: red;
+}
+.priceDetails{
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    box-shadow:  2px 2px #888888;
+}
+.cart-error-image{
+    width: 100%;
+    height: 611px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

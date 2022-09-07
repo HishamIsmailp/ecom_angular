@@ -1,0 +1,21 @@
+<div class="error" *ngIf="products.length==0|| !products">
+<div>
+  <nz-spin nzTip="Loading...">
+  </nz-spin>
+</div>
+</div>
+<div class="products-list-container">
+  <div *ngFor="let prod of products" class="products">
+    <a [routerLink]="['/productsList',prod.id]">
+      <nz-card nzHoverable style="width: 150px" [nzCover]="coverTemplate">
+        <nz-card-meta
+          [nzTitle]="prod.title"
+          [nzDescription]="prod.category"
+        ></nz-card-meta>
+      </nz-card>
+      <ng-template #coverTemplate>
+        <img alt="example" [src]="prod.image" width="100px" height="130px" />
+      </ng-template>
+    </a>
+  </div>
+</div>

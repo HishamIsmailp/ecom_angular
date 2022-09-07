@@ -1,0 +1,33 @@
+<div class="productDetail-error" *ngIf="!productData.title">
+  <div>
+    <nz-spin nzTip="Loading...">
+    </nz-spin>
+  </div>
+  </div>
+<div nz-row class="product-detail-container">
+  <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="8" >
+    <img [src]="productData.image" alt="" width="300px" height="461px" />
+  </div>
+  <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="12" class="product-detail-container" >
+      <h2 nz-col nzSpan="24">{{ productData.title }}</h2>
+      <h2 nz-col nzSpan="24">₹{{ productData.price }}</h2>
+      <h5 nz-col nzSpan="24">{{ productData.category }}</h5>
+      <h4>{{ productData.description }}</h4>
+      <button
+        nz-button
+        (click)="addProduct()"
+        nzType="primary"
+        class="cartButton"
+      >
+        Add to cart
+      </button>
+      <button
+        nz-button
+        nzType="primary"
+        routerLink="/productsList"
+        class="cartButton"
+      >
+        back
+      </button>
+  </div>
+</div>

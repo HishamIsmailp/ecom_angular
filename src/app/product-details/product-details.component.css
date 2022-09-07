@@ -1,0 +1,14 @@
+.cartButton{
+    width: 150px;
+    margin: 5px;
+}
+.product-detail-container{
+    padding: 75px;
+}
+.productDetail-error{
+    width: 100%;
+  height: 611px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,16 @@
+nz-header {
+  background-color: #dddddd;
+  width: 100%;
+}
+.logo {
+  font-weight: 10px;
+  font-size: 30px;
+}
+nz-content {
+  padding: 0 50px;
+}
+nz-footer {
+  text-align: center;
+  background-color: red;
+  width: 100%;
+} 

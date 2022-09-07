@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="form-container">
+    <div class="forms">
+      <span class="form-logo">STORE</span>
+      <div class="nameForm">
+        <input type="text" [(ngModel)]="name" placeholder="userName...." />
+      </div>
+      <div>
+        <span class="error">{{ nameError }}</span>
+      </div>
+
+      <div class="passwordForm">
+        <input type="password" [(ngModel)]="key" placeholder="password...." />
+      </div>
+      <div>
+        <span class="error">{{ passwordError }}</span>
+      </div>
+      <div>
+        <button (click)="dataSubmit()" nz-button nzType="primary">
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
